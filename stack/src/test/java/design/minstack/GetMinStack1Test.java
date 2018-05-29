@@ -36,10 +36,28 @@ public class GetMinStack1Test {
         }
     }
 
-    @Test
-    public void testGetMin() {
-        stack.getMin();
+    @Test(expected = RuntimeException.class)
+    public void testGetMin() throws RuntimeException {
         Assert.assertEquals(1, stack.getMin());
+
+        stack.pop();
+        Assert.assertEquals(1, stack.getMin());
+
+        stack.pop();
+        Assert.assertEquals(1, stack.getMin());
+
+        stack.pop();
+        Assert.assertEquals(3, stack.getMin());
+
+        stack.pop();
+        Assert.assertEquals(3, stack.getMin());
+
+        stack.pop();
+        Assert.assertEquals(3, stack.getMin());
+
+        stack.pop();
+        stack.getMin();
+        Assert.fail();
     }
 
 }
