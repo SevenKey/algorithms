@@ -9,7 +9,7 @@ import java.util.List;
 
 public class GetMinStack1Test {
 
-    private GetMinStack1 stack = new GetMinStack1();
+    private GetMinStack2 stack = new GetMinStack2();
 
     private List<Integer> testList = Lists.newArrayList(3, 4, 5, 1, 2, 1);
 

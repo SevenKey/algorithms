@@ -33,6 +33,8 @@ public class GetMinStack2 {
 
         if (stackMin.isEmpty() || newNum <= this.getMin()) {
             stackMin.push(newNum);
+        } else {
+            stackMin.push(this.getMin());
         }
     }
 
@@ -43,10 +45,8 @@ public class GetMinStack2 {
         }
 
         int value = stackData.pop();
+        this.stackMin.pop();
 
-        if (value == this.getMin()) {
-            this.stackMin.pop();
-        }
         return value;
     }
 
