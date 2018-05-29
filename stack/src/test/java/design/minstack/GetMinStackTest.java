@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import java.util.List;
 
-public class GetMinStack1Test {
+public class GetMinStackTest {
 
     private GetMinStack2 stack = new GetMinStack2();
 
