@@ -13,8 +13,7 @@ import java.util.Deque;
  *
  * @author weijianyu
  */
-public class GetMinStack1 {
-
+public class GetMinStack2 {
     /**
      * 实现栈功能
      */
@@ -24,7 +23,7 @@ public class GetMinStack1 {
      */
     private Deque<Integer> stackMin;
 
-    public GetMinStack1() {
+    public GetMinStack2() {
         this.stackData = new ArrayDeque<Integer>();
         this.stackMin = new ArrayDeque<Integer>();
     }
@@ -62,5 +61,4 @@ public class GetMinStack1 {
     public int size() {
         return stackData.size();
     }
-
 }
