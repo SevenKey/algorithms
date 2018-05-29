@@ -10,9 +10,10 @@ import java.util.Deque;
  * 要求
  * pop push getMin时间复杂度 O(1)
  * 可以使用现成的栈结构
- *
+ * <p>
  * 这种实现方式插入时稍省空间
  * 弹出时稍费时间
+ *
  * @author weijianyu
  */
 public class GetMinStack1 {
@@ -27,8 +28,8 @@ public class GetMinStack1 {
     private Deque<Integer> stackMin;
 
     public GetMinStack1() {
-        this.stackData = new ArrayDeque<Integer>();
-        this.stackMin = new ArrayDeque<Integer>();
+        this.stackData = new ArrayDeque<>();
+        this.stackMin = new ArrayDeque<>();
     }
 
     public void push(int newNum) {

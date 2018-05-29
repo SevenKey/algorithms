@@ -26,8 +26,8 @@ public class GetMinStack2 {
     private Deque<Integer> stackMin;
 
     public GetMinStack2() {
-        this.stackData = new ArrayDeque<Integer>();
-        this.stackMin = new ArrayDeque<Integer>();
+        this.stackData = new ArrayDeque<>();
+        this.stackMin = new ArrayDeque<>();
     }
 
     public void push(int newNum) {
