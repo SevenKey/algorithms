@@ -11,6 +11,8 @@ import java.util.Deque;
  * pop push getMin时间复杂度 O(1)
  * 可以使用现成的栈结构
  *
+ * 这种实现方式插入时稍省空间
+ * 弹出时稍费时间
  * @author weijianyu
  */
 public class GetMinStack1 {
