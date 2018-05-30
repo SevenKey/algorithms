@@ -42,7 +42,7 @@ public class BubbleSortTest {
     @Test
     public void testBubbleSort() throws Exception {
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 500000; i++) {
             int[] array = RandomArray.buildRandomArray();
             int[] bubbleArray = array.clone();
 
