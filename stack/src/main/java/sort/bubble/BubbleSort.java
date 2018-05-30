@@ -3,12 +3,20 @@ package sort.bubble;
 /**
  * 原型
  * 冒泡排序算法
+ * <p>
+ * 从第一个开始 比较他与他的后一位 如果大就交换 小不做处理
+ * 第一次比较N
+ * 第二次比较N-1
+ * ...
+ * 第N-1次比较1
+ * <p>
+ * 时间复杂度 O(N2)
  *
  * @author weijianyu
  */
-public class BubbleSort1 {
+public class BubbleSort {
 
-    public static void bubbleSort(int[] arr) {
+    public static void bubbleSort1(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
         }
