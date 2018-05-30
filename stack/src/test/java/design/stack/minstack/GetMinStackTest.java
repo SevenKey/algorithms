@@ -1,4 +1,4 @@
-package design.minstack;
+package design.stack.minstack;
 
 import com.google.common.collect.Lists;
 import org.junit.Assert;

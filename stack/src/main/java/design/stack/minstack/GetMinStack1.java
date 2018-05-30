@@ -1,4 +1,4 @@
-package design.minstack;
+package design.stack.minstack;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -10,12 +10,14 @@ import java.util.Deque;
  * 要求
  * pop push getMin时间复杂度 O(1)
  * 可以使用现成的栈结构
+ * <p>
+ * 这种实现方式插入时稍省空间
+ * 弹出时稍费时间
  *
- * 这种实现方式插入时费省空间
- * 弹出时稍省时间
  * @author weijianyu
  */
-public class GetMinStack2 {
+public class GetMinStack1 {
+
     /**
      * 实现栈功能
      */
@@ -25,7 +27,7 @@ public class GetMinStack2 {
      */
     private Deque<Integer> stackMin;
 
-    public GetMinStack2() {
+    public GetMinStack1() {
         this.stackData = new ArrayDeque<>();
         this.stackMin = new ArrayDeque<>();
     }
@@ -35,8 +37,6 @@ public class GetMinStack2 {
 
         if (stackMin.isEmpty() || newNum <= this.getMin()) {
             stackMin.push(newNum);
-        } else {
-            stackMin.push(this.getMin());
         }
     }
 
@@ -47,8 +47,10 @@ public class GetMinStack2 {
         }
 
         int value = stackData.pop();
-        this.stackMin.pop();
 
+        if (value == this.getMin()) {
+            this.stackMin.pop();
+        }
         return value;
     }
 
@@ -63,4 +65,5 @@ public class GetMinStack2 {
     public int size() {
         return stackData.size();
     }
+
 }
