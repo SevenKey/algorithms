@@ -1,4 +1,4 @@
-package common;
+package utils;
 
 import java.util.Random;
 
@@ -7,7 +7,7 @@ import java.util.Random;
  *
  * @author weijianyu
  */
-public class RandomArray {
+public class ArrayUtil {
 
     public static int[] buildRandomArray() {
         Random random = new Random();
@@ -17,6 +17,15 @@ public class RandomArray {
             array[i] = random.nextInt();
         }
         return array;
+    }
+
+    public static void swap(int[] arr, int i, int j) {
+        if (j >= arr.length) {
+            throw new RuntimeException("arr size to small!");
+        }
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 
 }

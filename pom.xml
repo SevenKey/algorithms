@@ -11,6 +11,8 @@
 
     <modules>
         <module>stack</module>
+        <module>sort</module>
+        <module>common</module>
     </modules>
 
     <properties>
