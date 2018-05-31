@@ -91,4 +91,10 @@ public class DogCatQueue {
     public boolean isCatEmpty() {
         return catQueue.isEmpty();
     }
+
+    public int size() {
+        return dogQueue.size() + catQueue.size();
+    }
+
+
 }
