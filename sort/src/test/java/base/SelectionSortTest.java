@@ -4,7 +4,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import utils.ArrayUtil;
+import utils.ArrayUtils;
 
 import java.util.Arrays;
 
@@ -32,7 +32,7 @@ public class SelectionSortTest {
     @Test(expected = RuntimeException.class)
     public void testSelectionSort1() throws Exception {
         for (int i = 0; i < 500000; i++) {
-            int[] array = ArrayUtil.buildRandomArray();
+            int[] array = ArrayUtils.buildRandomArray();
             int[] arrayCopy = array.clone();
 
             Arrays.sort(array);

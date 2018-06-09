@@ -1,6 +1,6 @@
 package base;
 
-import utils.ArrayUtil;
+import utils.ArrayUtils;
 
 /**
  * 冒泡排序
@@ -29,7 +29,7 @@ public class BubbleSort {
         for (int end = arr.length - 1; end > 0; end--) {
             for (int i = 0; i < end; i++) {
                 if (arr[i] > arr[i + 1]) {
-                    ArrayUtil.swap(arr, i, i + 1);
+                    ArrayUtils.swap(arr, i, i + 1);
                 }
             }
         }

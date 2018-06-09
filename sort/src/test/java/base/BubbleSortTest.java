@@ -1,11 +1,10 @@
 package base;
 
-import base.BubbleSort;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import utils.ArrayUtil;
+import utils.ArrayUtils;
 
 import java.util.Arrays;
 
@@ -34,7 +33,7 @@ public class BubbleSortTest {
     public void testBubbleSort1() throws Exception {
 
         for (int i = 0; i < 500000; i++) {
-            int[] array = ArrayUtil.buildRandomArray();
+            int[] array = ArrayUtils.buildRandomArray();
             int[] bubbleArray = array.clone();
 
             Arrays.sort(array);

@@ -12,7 +12,7 @@ import org.junit.Test;
  * @version 1.0
  * @since <pre>五月 31, 2018</pre>
  */
-public class ArrayUtilTest {
+public class ArrayUtilsTest {
 
     @Before
     public void before() throws Exception {
@@ -34,10 +34,10 @@ public class ArrayUtilTest {
      */
     @Test(expected = RuntimeException.class)
     public void testSwap() throws Exception {
-        int[] arr = ArrayUtil.buildRandomArray();
+        int[] arr = ArrayUtils.buildRandomArray();
         int[] copyArr = arr.clone();
         if (arr.length > 1) {
-            ArrayUtil.swap(arr, 0, 1);
+            ArrayUtils.swap(arr, 0, 1);
             int temp = copyArr[0];
             copyArr[0] = copyArr[1];
             copyArr[1] = temp;
@@ -46,7 +46,7 @@ public class ArrayUtilTest {
 
         int[] array = new int[1];
         array[0] = 0;
-        ArrayUtil.swap(array, 0, 1);
+        ArrayUtils.swap(array, 0, 1);
         Assert.fail();
     }
 

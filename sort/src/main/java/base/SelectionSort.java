@@ -1,6 +1,6 @@
 package base;
 
-import utils.ArrayUtil;
+import utils.ArrayUtils;
 
 /**
  * 选择排序
@@ -31,7 +31,7 @@ public class SelectionSort {
                 }
             }
             if (min != i) {
-                ArrayUtil.swap(arr, i, min);
+                ArrayUtils.swap(arr, i, min);
             }
         }
     }

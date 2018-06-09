@@ -7,7 +7,7 @@ import java.util.Random;
  *
  * @author weijianyu
  */
-public class ArrayUtil {
+public class ArrayUtils {
 
     public static int[] buildRandomArray() {
         Random random = new Random();
