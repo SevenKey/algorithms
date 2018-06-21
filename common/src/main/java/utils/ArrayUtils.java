@@ -9,6 +9,14 @@ import java.util.Random;
  */
 public class ArrayUtils {
 
+    private ArrayUtils() {
+    }
+
+    /**
+     * 随机获取随机长度随机元素的一个数组
+     *
+     * @return
+     */
     public static int[] buildRandomArray() {
         Random random = new Random();
         int size = random.nextInt(100);
@@ -19,6 +27,13 @@ public class ArrayUtils {
         return array;
     }
 
+    /**
+     * 数组元素交换
+     *
+     * @param arr
+     * @param i
+     * @param j
+     */
     public static void swap(int[] arr, int i, int j) {
         if (j >= arr.length) {
             throw new RuntimeException("arr size to small!");

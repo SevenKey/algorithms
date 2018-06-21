@@ -95,6 +95,4 @@ public class DogCatQueue {
     public int size() {
         return dogQueue.size() + catQueue.size();
     }
-
-
 }
