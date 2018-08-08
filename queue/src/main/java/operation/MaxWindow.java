@@ -29,11 +29,11 @@ public class MaxWindow {
         int[] res = new int[arr.length - w + 1];
         int index = 0;
         for (int i = 0; i < arr.length; i++) {
-            while (qMax.isEmpty() && arr[qMax.peek()] <= arr[i]) {
+            while (!qMax.isEmpty() && arr[qMax.peekLast()] <= arr[i]) {
                 qMax.pollLast();
             }
             qMax.addLast(i);
-            if (qMax.peekFirst() < i - w) {
+            if (qMax.peekFirst() == i - w) {
                 qMax.pollFirst();
             }
             if (i >= w - 1) {
