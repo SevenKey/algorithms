@@ -1,5 +1,6 @@
 package design.stack;
 
+import com.google.common.collect.Lists;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -9,6 +10,7 @@ import utils.ArrayUtils;
 import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Deque;
+import java.util.List;
 
 /**
  * SortStack Tester.
@@ -48,4 +50,6 @@ public class SortStackTest {
             Assert.assertEquals(array[i], j);
         }
     }
+
+
 } 
