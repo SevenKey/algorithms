@@ -45,6 +45,11 @@
                 <artifactId>commons-lang3</artifactId>
                 <version>${common-lang3}</version>
             </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>4.1.6.Final</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -64,6 +69,11 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
         </dependency>
     </dependencies>
 </project>

@@ -1,5 +1,8 @@
 package utils;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.util.Random;
 
 /**
@@ -41,6 +44,23 @@ public class ArrayUtils {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
+    }
+
+
+    public static void main(String[] args) {
+        try {
+            String test = URLEncoder.encode("上海", "utf-8");
+            String test2 = URLEncoder.encode(test, "utf-8");
+            System.out.println(test);
+            System.out.println(test2);
+
+            String test3 = URLDecoder.decode(test2, "utf-8");
+            String test4 = URLDecoder.decode(test3, "utf-8");
+            System.out.println(test3);
+            System.out.println(test4);
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
     }
 
 }

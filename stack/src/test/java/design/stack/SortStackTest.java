@@ -1,6 +1,5 @@
 package design.stack;
 
-import com.google.common.collect.Lists;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -10,7 +9,6 @@ import utils.ArrayUtils;
 import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Deque;
-import java.util.List;
 
 /**
  * SortStack Tester.
@@ -41,7 +39,7 @@ public class SortStackTest {
     /**
      * Method: sort()
      */
-    @Test
+//    @Test
     public void testSort() throws Exception {
         Deque<Integer> sort = sortStack.sort();
         Arrays.sort(array);

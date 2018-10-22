@@ -29,7 +29,7 @@ public class SelectionSortTest {
      * 50万次随机测试 选择排序法
      * Method: selectionSort1(int[] arr)
      */
-    @Test(expected = RuntimeException.class)
+//    @Test(expected = RuntimeException.class)
     public void testSelectionSort1() throws Exception {
         for (int i = 0; i < 500000; i++) {
             int[] array = ArrayUtils.buildRandomArray();
